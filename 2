@@ -1,0 +1,15 @@
+function constructor(startingValue){
+    this.startingValue=startingValue;
+    this.Value=this.startingValue;
+    this.read =function()
+    {
+        let reader;
+        reader=prompt("Read = ",0);
+        this.Value=this.Value+this.reader;
+    }
+}
+
+let pr = new constructor(10);
+
+console.log(pr.read());
+alert (pr.Value)
