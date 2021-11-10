@@ -1,0 +1,19 @@
+function Calc(a,b){
+    this.read=function(){
+        this.a=prompt("A:",0);
+        this.b=prompt("B:",0);
+    };
+    this.sum=function(){
+        let sum;
+        sum=this.a+this.b;
+        return sum;
+    };
+    this.mul=function(){
+        let mul;
+        mul=this.a*this.b;
+        return mul;
+    }
+}
+let x = new Calc();
+console.log(sum)
+console.log(mul)
