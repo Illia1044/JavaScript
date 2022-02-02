@@ -1,0 +1,52 @@
+<html>
+<body>
+
+  <ul>
+    <li>Процесори
+      <ul>
+        <li>Intel
+          <ul>
+            <li>i3</li>
+            <li>i5</li>
+            <li>i7</li>
+            <li>i9</li>
+          </ul>
+        </li>
+        <li>AMD
+          <ul>
+            <li>Ryzen</li>
+            <li>Threadripper</li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li>Відеокарти
+      <ul>
+        <li>AMD
+          <ul>
+            <li>RX</li>
+            <li>RX XT</li>
+          </ul>
+        </li>
+        <li>Nvidia
+          <ul>
+            <li>GT</li>
+            <li>GTX</li>
+            <li>RTX</li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+
+  <script>
+    for (let li of document.querySelectorAll('li')) {
+      let title = li.firstChild.data;
+      let count = li.getElementsByTagName('li').length;
+
+      alert('кількість потомків у підсписку ' + title + ': ' + count);
+    }
+  </script>
+
+</body>
+</html>
